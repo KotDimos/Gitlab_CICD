@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+
+  gitlab-runner:
+    image: gitlab/gitlab-runner:latest
+    restart: on-failure
+    container_name: gitlab-runner
+    volumes:
+      - /etc/gitlab-runner:/etc/gitlab-runner
+      - /var/run/docker.sock:/var/run/docker.sock:rw
