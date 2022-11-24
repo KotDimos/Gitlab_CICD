@@ -13,3 +13,4 @@ services:
 
 volumes:
   gitlab-runner-config:
+    name: gitlab-runner-config
