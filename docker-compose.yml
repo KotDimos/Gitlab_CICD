@@ -5,7 +5,7 @@ services:
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
     restart: on-failure
-    container_name: gitlab-runner
+    container_name: ${DOCKER_CONTAINER_NAME}
     volumes:
       - gitlab-runner-config:/etc/gitlab-runner
       - /var/run/docker.sock:/var/run/docker.sock:rw
