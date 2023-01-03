@@ -2,7 +2,7 @@
 
 Start gitlab-runner.
 
-    docker-compose up --build -d
+    docker-compose up -d
 
 Регистрация раннера.
 
