@@ -4,10 +4,10 @@ Start gitlab-runner.
 
     docker-compose up -d
 
-Регистрация раннера.
+Register runner.
 
     ./gitlab-runner-command.sh register
 
-Подтверждение раннера.
+Verify runner.
 
     ./gitlab-runner-command.sh verify
